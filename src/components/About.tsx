@@ -4,19 +4,19 @@ import { Lightbulb, Heart, Users } from "lucide-react";
 const About = () => {
   const values = [
     {
-      icon: Lightbulb,
-      title: "Wisdom",
-      description: "Sharing timeless insights and knowledge that illuminate the path to understanding and growth."
-    },
-    {
       icon: Heart,
-      title: "Compassion",
-      description: "Fostering a community built on empathy, kindness, and genuine care for one another."
+      title: "Gratitude",
+      description: "Living with joyful thanksgiving for God's grace and the inheritance we've received through Christ."
     },
     {
       icon: Users,
-      title: "Unity",
-      description: "Bringing people together in a shared journey toward enlightenment and purpose."
+      title: "Brotherhood",
+      description: "Building authentic relationships where men encourage, challenge, and support one another in faith."
+    },
+    {
+      icon: Lightbulb,
+      title: "Spiritual Growth",
+      description: "Pursuing deeper understanding of God's Word and strengthening our walk with Him together."
     }
   ];
 
@@ -25,12 +25,12 @@ const About = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16 animate-in fade-in slide-in-from-bottom-4 duration-700">
           <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-foreground">
-            Our Mission
+            A Men's Group Rooted in Faith
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            We are dedicated to spreading light, wisdom, and hope in a world that often feels dark. 
-            Through community, compassion, and shared purpose, we help individuals discover their 
-            inner strength and illuminate the path forward.
+            We are men called to walk in the Light — strengthened with power, endurance, and patience through God's Spirit. 
+            Together, we give joyous thanks to the Father who has qualified us to share in the inheritance of the saints. 
+            Through fellowship, accountability, and Scripture, we grow in faith and purpose.
           </p>
         </div>
 

@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
+import retreatBarn from "@/assets/retreat-barn.jpg";
 
 const Gallery = () => {
   // Placeholder for future gallery images
@@ -19,7 +20,8 @@ const Gallery = () => {
     },
     {
       title: "Men's Retreat",
-      description: "Deepening our faith in nature's beauty"
+      description: "Deepening our faith in nature's beauty",
+      image: retreatBarn
     },
     {
       title: "Prayer Circle",
@@ -53,10 +55,14 @@ const Gallery = () => {
                 className="overflow-hidden hover:shadow-soft transition-all duration-300 hover:-translate-y-1 bg-card border-border/50 animate-in fade-in slide-in-from-bottom-4"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="aspect-video bg-gradient-nature flex items-center justify-center">
-                  <p className="text-primary-foreground font-serif text-xl text-center px-4">
-                    {item.title}
-                  </p>
+                <div className="aspect-video bg-gradient-nature flex items-center justify-center relative overflow-hidden">
+                  {item.image ? (
+                    <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+                  ) : (
+                    <p className="text-primary-foreground font-prosto text-xl text-center px-4">
+                      {item.title}
+                    </p>
+                  )}
                 </div>
                 <div className="p-6">
                   <p className="text-muted-foreground leading-relaxed">

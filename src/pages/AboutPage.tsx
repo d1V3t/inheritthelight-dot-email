@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Book, Heart, Users, Lightbulb, Shield, Sparkles } from "lucide-react";
+import switzerlandBg from "@/assets/switzerland-cross.jpg";
 
 const AboutPage = () => {
   const values = [
@@ -41,10 +42,22 @@ const AboutPage = () => {
     <div className="min-h-screen">
       <Navigation />
       
-      <main className="pt-32 pb-24 px-6">
+      <div 
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: `url(${switzerlandBg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
+        }}
+      >
+        <div className="absolute inset-0 bg-background/85 backdrop-blur-sm"></div>
+      </div>
+      
+      <main className="relative z-10 pt-32 pb-24 px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16 animate-in fade-in slide-in-from-bottom-4 duration-700">
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-radiance bg-clip-text text-transparent">
+            <h1 className="font-prosto text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-primary drop-shadow-lg">
               A Men's Group Rooted in Faith
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">

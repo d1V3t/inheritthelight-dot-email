@@ -51,6 +51,7 @@ export default {
       backgroundImage: {
         'gradient-radiance': 'var(--gradient-radiance)',
         'gradient-subtle': 'var(--gradient-subtle)',
+        'gradient-nature': 'var(--gradient-nature)',
       },
       boxShadow: {
         'soft': 'var(--shadow-soft)',
